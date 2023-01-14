@@ -1,0 +1,23 @@
+@import "str-to-list";
+
+$list: str-to-list("#{$name_color_by_group}", "|");
+$nested-list: ();
+@each $item in $list {
+  $item: str-to-list("#{$item}", ";");
+  $nested-list: append($nested-list, $item);
+}
+
+@each $group-name, $color in $nested-list {
+  // Custom groups
+  .names span {
+    &.group--#{$group-name} a {
+      color: #{$color};
+    }
+  }
+  // Staff groups
+  .names span {
+    &.#{$group-name} a {
+      color: #{$color};
+    }
+  }
+}

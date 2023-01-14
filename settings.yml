@@ -1,0 +1,5 @@
+name_color_by_group:
+  type: list
+  list_type: simple
+  default: ""
+  description: "Semicolon delimited in this order: <code>group;color</code> <br> <code>staff;#FFA500</code> <br> <code>moderator;var(--tertiary)</code>"
