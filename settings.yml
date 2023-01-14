@@ -2,4 +2,4 @@ name_color_by_group:
   type: list
   list_type: simple
   default: ""
-  description: "Semicolon delimited in this order: <code>group;color</code> <br> <code>staff;#FFA500</code> <br> <code>moderator;var(--tertiary)</code>"
+  description: "Semicolon delimited in this order. Groups like moderator, staff, admin etc... needs to add a . (dot) to the group name: <br> For example: <br> <code>group;color</code> <br> <code>.staff;#FFA500</code> <br> <code>.moderator;var(--tertiary)</code> <br> <code>customgroup;green</code>"
