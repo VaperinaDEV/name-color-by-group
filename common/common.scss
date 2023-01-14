@@ -16,7 +16,7 @@ $nested-list: ();
   }
   // Staff groups
   .names span {
-    &.#{$group-name} a {
+    &#{$group-name} a {
       color: #{$color};
     }
   }
